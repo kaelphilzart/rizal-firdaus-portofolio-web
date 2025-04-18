@@ -53,7 +53,7 @@ export default function AboutServices() {
                         viewport={{ once: true }}
                         transition={{ duration: 1, delay: 0.2 }}
                     >
-                        <h3 className="text-2xl font-semibold">Meet the Mind Behind the Mission</h3>
+                        <h2 className="text-2xl font-semibold">Meet the Mind Behind the Mission</h2>
                         <p className="text-gray-400 leading-relaxed">
                             Founded by <strong>Rizal Firdaus</strong>, Technophil Media brings together years of experience in software development,
                             digital design, and system integration. Our mission is to deliver impactful tech that connects, empowers, and evolves with people.

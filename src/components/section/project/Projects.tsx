@@ -57,9 +57,9 @@ export default function Projects() {
                       className="object-cover brightness-75"
                     />
                     <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
-                      <h3 className="text-white text-lg font-semibold mb-1">
+                      <h2 className="text-white text-lg font-semibold mb-1">
                         {project.title}
-                      </h3>
+                      </h2>
                       <p className="text-sm text-gray-300 line-clamp-2">
                         {project.description}
                       </p>
