@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+body {
+  overflow-x: hidden; /* pastikan ini tidak mempengaruhi scroll vertikal */
+  overflow-y: auto;
+}
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.animate-scroll-reverse {
+  display: flex;
+  animation: marquee-reverse 20s linear infinite;
+  width: max-content;
+}
+
+
+
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: scroll-marquee 30s linear infinite;
+}
+
+
+
