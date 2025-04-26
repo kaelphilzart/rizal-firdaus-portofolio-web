@@ -4,28 +4,28 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Smart Inventory System",
-    description: "Real-time stock tracking with forecasting AI.",
+    title: "SPK Pada Koperasi Simpan Pinjam",
+    description: "Sistem Pendukung Keputusan dibangun menggunakan metode Simple Additive Weight ( SAW ), dan menggunakan laravel dari sisi backend dan next js dari sisi frontend",
     image: "/images/techno_humanoid_background.webp",
-    url: "https://github.com/yourname/project-1",
+    url: "https://github.com/kaelphilzart/Sistem-Pendukung-Keputusan-SAW-Pada-Koperasi",
   },
   {
-    title: "POS Distributor App",
-    description: "POS for multi-gudang distributor.",
+    title: "Sistem Penggajian Pada konveksi Jahit",
+    description: "Sistem Informasi ini dibangun menggunakan framework laravel",
     image: "/images/techno_humanoid_background.webp",
-    url: "https://github.com/yourname/project-2",
+    url: "https://github.com/kaelphilzart/sistem-penggajian-pada-konveksi-jahita",
   },
   {
-    title: "Export Portal",
-    description: "Export B2B portal for Gracilaria.",
+    title: "Sistem Penilaian siswa pada Madrasah Diniyah",
+    description: "Sistem Informasi ini dibangun menggunakan framework laravel",
     image: "/images/techno_humanoid_background.webp",
-    url: "https://github.com/yourname/project-3",
+    url: "https://github.com/kaelphilzart/sistem-penilaian-pada-madrasah-diniyah",
   },
   {
-    title: "Distributor Mobile App",
-    description: "Mobile app for distributor management.",
+    title: "SPK Seleksi Pelamar Pekerjaan",
+    description: "Sistem Pendukung Keputusan ini menggunakan metode profile matching dn dibangun menggunakan framework laravel",
     image: "/images/techno_humanoid_background.webp",
-    url: "https://github.com/yourname/project-4",
+    url: "https://github.com/kaelphilzart/sistem-pendukung-keputusan-metode-profile-matching-seleksi-pelamar-pekerjaan-",
   },
 ];
 

@@ -130,7 +130,7 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden text-white" onClick={handleToggle}>
+            <button className="md:hidden text-white" onClick={handleToggle} aria-label={mobileOpen ? "Close menu" : "Open menu"}>
               {mobileOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>

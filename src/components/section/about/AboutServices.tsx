@@ -99,7 +99,7 @@ export default function AboutServices() {
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
                                 {service.icon}
-                                <h4 className="font-semibold">{service.title}</h4>
+                                <h3 className="font-semibold">{service.title}</h3>
                                 <p className="text-gray-400 text-sm mt-1">{service.desc}</p>
                             </motion.div>
                         ))}
