@@ -19,23 +19,27 @@ export default function Hero() {
             <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
 
             <div className="relative z-10 flex flex-col justify-center items-center h-full text-center text-white px-4">
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className="text-4xl sm:text-6xl font-semibold mb-4"
+                    className="relative z-10 flex flex-col justify-center items-center text-center text-white px-4"
                 >
-                    Technophil Media <br />
-                    For World of Technology
-                </motion.h1>
+                    <h1 className="text-4xl sm:text-6xl font-semibold mb-4 opacity-100">
+                        Technophil Media <br />
+                        For World of Technology
+                    </h1>
+                </motion.div>
+
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="text-lg md:text-xl max-w-xl"
+                    className="text-lg md:text-xl max-w-xl text-center text-white"
                 >
                     Turning ideas into digital impact — from custom apps to personal branding solutions.
                 </motion.h2>
+
                 <div className="flex mx-auto flex-row items-center gap-4 mt-2">
                     <motion.a
                         initial={{ opacity: 0, scale: 0.8 }}

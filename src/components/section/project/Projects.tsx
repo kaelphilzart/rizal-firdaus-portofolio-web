@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Tilt from 'react-parallax-tilt';
-
+import { motion } from "framer-motion";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
@@ -43,19 +43,25 @@ const projects = [
 export default function Projects() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  
+
   return (
     <section id="projects" className="bg-black text-white py-10 px-4 md:px-20">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-5">
-          <h2 className="text-green-400 text-sm uppercase tracking-widest mb-2">
-            Projects
-          </h2>
-          <h1 className="text-3xl md:text-4xl font-bold">Things I&apos;ve Built</h1> {/* Fixed here */}
-        </div>
-
-        <div className="relative w-full max-w-7xl mx-auto px-4 py-5">
-          {/* Custom Navigation */}
+        <motion.div
+          className="mb-16 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <div className="text-center mb-5">
+            <h2 className="text-green-400 text-sm uppercase tracking-widest mb-2">
+              Projects
+            </h2>
+            <h1 className="text-3xl md:text-4xl font-bold">Things I&apos;ve Built</h1> {/* Fixed here */}
+          </div>
+        </motion.div>
+        <div className="relative w-full max-w-7xl mx-auto px-4 py-2">
           <div className="absolute top-1/2 -translate-y-1/2 left-2 z-10">
             <button ref={prevRef} className="p-2 rounded-full bg-black/60 hover:bg-black/80 transition">
               <ArrowLeft className="text-white w-6 h-6" />
@@ -66,8 +72,6 @@ export default function Projects() {
               <ArrowRight className="text-white w-6 h-6" />
             </button>
           </div>
-
-          {/* Swiper */}
           <Swiper
             effect="coverflow"
             grabCursor={true}
@@ -88,7 +92,7 @@ export default function Projects() {
               nextEl: nextRef.current,
             }}
             onInit={(swiper) => {
-              const navigation = swiper.params.navigation as any; 
+              const navigation = swiper.params.navigation as any;
               if (navigation) {
                 navigation.prevEl = prevRef.current;
                 navigation.nextEl = nextRef.current;
