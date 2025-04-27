@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import '../styles/globals.css'
 import { Montserrat } from 'next/font/google'
 import Footer from '@/components/section/footer/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 // font
 const montserrat = Montserrat({
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body className='min-h-screen overflow-y-auto overflow-x-hidden'>
         {children}
       <Footer/>
+      <WhatsAppButton/>
       </body>
     </html>
   )
