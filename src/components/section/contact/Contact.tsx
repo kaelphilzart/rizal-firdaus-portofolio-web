@@ -55,15 +55,6 @@ export default function Contact() {
                 Send Message
               </button>
 
-              <div className="md:text-end text-center">
-                <a
-                  href="/files/CV_YourName.pdf"
-                  download
-                  className="inline-block w-full md:w-auto border border-green-400 text-green-400 px-6 py-3 rounded-full hover:bg-green-400 hover:text-black transition font-semibold"
-                >
-                  Download CV
-                </a>
-              </div>
             </div>
 
           </form>

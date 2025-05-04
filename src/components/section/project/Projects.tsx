@@ -38,6 +38,12 @@ const projects = [
     image: "/images/project/SPK-penerimaan-pelamar-perkerja-di-travel-umroh-dan-haji.webp",
     url: "https://github.com/kaelphilzart/sistem-pendukung-keputusan-metode-profile-matching-seleksi-pelamar-pekerjaan-",
   },
+  {
+    title: "SI Tournament dan Member ONIC Esport",
+    description: "Sistem Informasi ini dibangun menggunakan framework laravel",
+    image: "/images/project/SI-Member-dan-tournment-ONIC-esport.webp",
+    url: "https://github.com/kaelphilzart/sistem_tournament",
+  },
 ];
 
 export default function Projects() {
