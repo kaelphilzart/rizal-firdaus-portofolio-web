@@ -53,7 +53,7 @@ const projects = [
     {
     title: "Absensi Arraya",
     description: "Sistem Informasi ini dibangun menggunakan next js dan golang",
-    image: "/images/project/SI-KPR.webp",
+    image: "/images/project/Absensi-Arraya.webp",
     url: "https://github.com/kaelphilzart/absensi-arraya",
   },
 ];
