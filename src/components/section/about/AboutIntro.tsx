@@ -68,7 +68,7 @@ export default function AboutIntro() {
                 I specialize in building digital solutions that are not just smart, but also meaningful for people.
                 <br /><br />
                 <a
-                  href="https://github.com/kaelphilzart/"
+                  href="https://github.com/kaelphilzart?tab=repositories"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-500 hover:underline font-semibold"

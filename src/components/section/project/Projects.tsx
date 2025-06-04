@@ -44,6 +44,18 @@ const projects = [
     image: "/images/project/SI-Member-dan-tournment-ONIC-esport.webp",
     url: "https://github.com/kaelphilzart/sistem_tournament",
   },
+    {
+    title: "SI KPR Rumah",
+    description: "Sistem Informasi ini dibangun menggunakan fillament",
+    image: "/images/project/SI-KPR.webp",
+    url: "https://github.com/habieell/kpr-house",
+  },
+    {
+    title: "Absensi Arraya",
+    description: "Sistem Informasi ini dibangun menggunakan next js dan golang",
+    image: "/images/project/SI-KPR.webp",
+    url: "https://github.com/kaelphilzart/absensi-arraya",
+  },
 ];
 
 export default function Projects() {
@@ -134,7 +146,7 @@ export default function Projects() {
         </div>
         <div className="text-center mt-2">
           <Link
-            href="https://github.com/kaelphilzart/"
+            href="https://github.com/kaelphilzart?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-500 hover:underline font-semibold"
